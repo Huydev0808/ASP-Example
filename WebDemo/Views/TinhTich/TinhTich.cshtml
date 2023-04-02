@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "TinhTich";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex flex-column">
+	<h1 class="text-center my-5 text-uppercase">tính tích hai số</h1>
+	<div class="col-12">
+		<div class="col-4 mx-auto">
+			<form action="/TinhTich/TinhTich" method="post">
+				<div class="mb-3">
+					<label for="soNguyenC" class="form-label">Số nguyên thứ 1</label>
+					<input type="number" class="form-control" id="soNguyenC" name="soNguyenC" value="@ViewData["SoNguyenC"]" aria-describedby="text">
+				</div>
+				<div class="mb-3">
+					<label for="soNguyenD" class="form-label">Số nguyên thứ 2</label>
+					<input type="number" class="form-control" id="soNguyenD" name="soNguyenD" value="@ViewData["SoNguyenD"]" aria-describedby="text">
+				</div>
+
+				<div class="d-flex align-items-center justify-content-center mt-5">
+					<button type="submit" id="ketqua" class="btn btn-primary px-4 py-2">Xem kết quả</button>
+				</div>
+			</form>
+			<div class="my-5">
+				<label for="tichHaiSo" class="form-label fw-bold">Kết quả</label>
+				<input type="number" class="form-control" id="tichHaiSo" name="tichHaiSo" value="@ViewData["TichHaiSo"]" aria-describedby="text">
+			</div>
+		</div>
+	</div>
+</div>
+

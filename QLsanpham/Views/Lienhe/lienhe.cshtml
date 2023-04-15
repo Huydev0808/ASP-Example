@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "lienhe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex flex-column">
+    <h1 class="text-center my-5 text-uppercase">THÔNG TIN HỌC VIÊN</h1>
+    <div class="col-12">
+        <div class="d-flex flex-row justify-content-center gap-5">
+            <div class="col-4 px-5 border rounded-3 d-flex flex-column justify-content-center shadow p-3 mb-5">
+                <form action="/Home/Index" method="post">
+                    <div class="mb-3">
+                        <label for="hoTen" class="form-label">Họ tên</label>
+                        <input type="text" class="form-control" id="hoTen" name="hoTen" value="@ViewData["HoTen"]" aria-describedby="text" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ngaySinh" class="form-label">Ngày sinh</label>
+                        <input type="text" class="form-control" id="ngaySinh" name="ngaySinh" value="@ViewData["NgaySinh"]" aria-describedby="text" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" value="@ViewData["Email"]" aria-describedby="text" disabled>
+                    </div>
+                     <div class="mb-3">
+                        <label for="soDienThoai" class="form-label">Số điện thoại</label>
+                        <input type="number" class="form-control" id="soDienThoai" name="soDienThoai" value="@ViewData["SoDienThoai"]" aria-describedby="text" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
